@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Helvetica;
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #container {
+    position:relative;
+    min-width:100%;
+    min-height:100%;
+    margin:0;
+    padding:0;
+}
+  .header {
+    background-color: rgb(26, 1, 27);
+    margin: 0;
+    padding: 0;
+    border:3px;
+    text-align: center;
+    font-family: 'squared';
+    color: white;
+    position: fixed;
+    opacity: .7;
+    width: 100vw;
+    height: 10vh;
+    top:0;
+    
+    
+  }
+  #head-text {
+    color:white;
+    margin-top: 5vh;
+    padding:0;
+    font-size: 4vh;
+    
+  }
+
+  #button-container-start-stop {
+    position:relative;
+    top:20vw;
+    left: 60vw;
+  }
+
+  #button-container-lap-reset {
+    position:relative;
+    top: 20vw;
+    left: 30vw;
+  }
+ 
+  .start-button {
+    background-color: rgba(30, 145, 35, 0.4);
+    color: rgb(0, 255, 0);
+    position:fixed;
+    top: 50%;
+    left: 60%;
+    font-size: 3vw;
+    display: block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw double black; 
+    border-radius: 100%;
+    height: 15vw;
+    width: 15vw;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    outline-color: black;
+    
+    
+  }
+  .start-button:hover{
+    background-color: rgba(28, 202, 36, 0.4);
+    cursor: pointer;
+  }
+  
+  .stop-button {
+    background-color: rgb(255, 0, 0, 0.2);
+    color: rgb(255, 0, 0, 0.6);
+    font-size: 3vw;
+    display: block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw double black; 
+    border-radius: 100%;
+    height: 15vw;
+    width: 15vw;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    outline-color: black;
+  }
+  .stop-button:hover{
+    background-color: rgba(228, 27, 0, 0.4);
+    cursor: pointer;
+  }
+
+  .lap-button-disabled {
+    background-color: grey;
+    position:fixed;
+    top: 50%;
+    left: 26%;
+    font-size: 3vw;
+    display: block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw double black; 
+    border-radius: 100%;
+    height: 15vw;
+    width: 15vw;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    outline-color: black;
+  }
+  
+  .lap-button {
+    background-color: rgba(212, 145, 19, 0.705);
+    position:fixed;
+    top: 50%;
+    left: 26%;
+    font-size: 3vw;
+    display: block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw double black; 
+    border-radius: 100%;
+    height: 15vw;
+    width: 15vw;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    outline-color: black;
+  }
+
+  .lap-button:hover{
+    background-color:orange;
+    cursor: pointer;
+  }
+  .reset-button {
+    background-color: yellow;
+    position:fixed;
+    top: 50%;
+    left: 26%;
+    font-size: 3vw;
+    display: block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw double black; 
+    border-radius: 100%;
+    height: 15vw;
+    width: 15vw;
+    transition-duration: 0.4s;
+    font-family: Helvetica;
+    outline-color: black;
+  }
+
+  .reset-button:hover{
+    background-color: rgba(171, 184, 0, 0.897);
+    cursor: pointer;
+  }
+  
+  .timer{
+    font-size: 5vw;
+    font-family: "digital";
+    color: white;
+    
+    position: fixed;
+    top:20%;
+    left: 15%;
+    height: 5vh;
+    width: 100vw;
+    padding: 2vh;
+    border:3px,solid white;
+
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 2vw;
+    background-color: rgb(26, 1, 27);
+    font-family: "squared";
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    opacity: .7;
+    width: 100vw;
+    height: 5%;
+  }
+
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  @font-face{
+    font-family:'digital';
+    src: url('digital-7/digital-7 (italic).ttf');
+   }
+   @font-face{
+    font-family:'squared';
+    src: url('square-sans-serif-7/square_sans_serif_7.ttf');
+   }

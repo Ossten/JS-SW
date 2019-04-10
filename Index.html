@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stop Watch</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <h5 id="head-text">Stopwatch</h5>
+        </div>
+            <div class="timer">
+                <span id="day">00 </span> D :
+                <span id="hour">00 </span> H :
+                <span id="minute">00 </span> M :
+                <span id="second">00 </span> S :
+                <span id="hundred" style="letter-spacing:'5px'">00 </span><span style="letter-spacing:'5px'"> MS</span>
+            </div>
+        <div id="button-container-start-stop">
+            <button class="start-button" onclick="start()">
+                Start
+                <script src="scripts.js"></script>
+            </button>
+        </div>
+        <div id="button-container-lap-reset">
+
+            <button class="lap-button-disabled" onclick="resetCount()" >
+                Lap
+                <script src="scripts.js"></script>
+            </button>
+        </div>
+
+        <div class="footer">
+            <p>® BP inc. All Rights Reserved.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
